@@ -3,7 +3,7 @@ var Field = require('./field');
 var minerals = require('./minerals');
 var fieldType = require('./field-type');
 var forest = require('./forest');
-var colorLerp = require('../color-lerp');
+var colorLerp = require('../node_modules/color-lerp');
 
 'use strict';
 
@@ -106,7 +106,7 @@ class World
 
         
         //Forests
-        if(generatedForests)
+        if(generateTrees)
         {
             console.log("Generating forests...");
             percentGenerated = 0;
@@ -224,10 +224,8 @@ class World
                         while(count > j && Math.random() < 0.4)
                         {
                             count--;
-                            this.m_fields[field.m_x][field.m_y].m_color = getRandomColor();
                         }
                     }
-                    this.m_fields[field.m_x][field.m_y].m_color = getRandomColor();
                 }
             }
             console.log("Wildlife generated");

@@ -1,4 +1,4 @@
-var colorLerp = require('../color-lerp');
+var colorLerp = require('../node_modules/color-lerp');
 
 'use strict';
 

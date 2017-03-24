@@ -1,5 +1,5 @@
 {
-  "name": "windshavecome",
+  "name": "goodolddays",
   "version": "1.0.1",
   "description": "Custom Node.js websocket realtime multiplayer game",
   "private": true,
@@ -11,7 +11,21 @@
   "dependencies": {
     "crypto": "0.0.3",
     "md5": "^2.2.1",
-    "mongodb": "^2.2.10",
+    "mongodb": "^2.2.25",
     "socket.io": "^1.4.8"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ragethunder/goodolddays.git"
+  },
+  "keywords": [
+    "rpg"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ragethunder/goodolddays/issues"
+  },
+  "homepage": "https://github.com/Ragethunder/goodolddays#readme"
 }

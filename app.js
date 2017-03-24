@@ -8,7 +8,7 @@ var MongoClient = require('mongodb').MongoClient;
 var MongoUsersCollection;
 var MongoCharsCollection;
 var MongoChatCollection;
-var world = require('good-old-days-main/world');
+var world = require('./good-old-days-main/world');
 
 
 var seaLevel = -1.5;
@@ -52,7 +52,7 @@ var wildlife = [
 	{name : "Brown Bear", population : "very low", altRange : [beachLevel, 999], type : "ground", physique : "very heavy", travelSpeed : "fast", attitude : ["predator", "defensive"], attractedTo: ["wildlife", "ground", "fruit", "berries"]}
 ];
 
-var w = new world(128, seaLevel, beachLevel, grassLevel, snowCapLevel, forestsNames, mineralTypes, fieldTypes, wildlife, false, true, true, true);
+var w = new world(128, seaLevel, beachLevel, grassLevel, snowCapLevel, forestsNames, mineralTypes, fieldTypes, wildlife, true, true, true, true);
 
 var md5sum = crypto.createHash('md5');
 
